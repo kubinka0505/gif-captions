@@ -1,0 +1,135 @@
+{
+	"main": {
+		"pkg_not_found.exe": "Eseguibile {package_name} non trovato all'interno della variabile d'ambiente {variable_name}",
+		"pkg_not_installed": "Il pacchetto {package_name} non è installato",
+		"open_in_explorer": "Apertura file in esplora risorse"
+	},
+	"pkg": {
+		"not_found": "{package_name} non trovato!"
+	},
+	"optim": {
+		"static.grayscale": "L'immagine statica è stata convertita in modalità di colore in scala di grigi",
+		"static.run": "Esecuzione dell'ottimizzatore di immagini statiche con limite di {max_colors} colori",
+
+		"dynamic.delay_count": "Il frame rate non è stato fornito, rilevato dal pacchetto",
+		"dynamic.delay_count.set": "Il conteggio del ritardo dell'immagine dinamica verrà impostato su {delay_count}",
+		"dynamic.run": "Esecuzione dell'ottimizzatore di immagini dinamiche con conteggio del ritardo {delay_count} e conteggio del loop {loop_count}"
+	},
+	"argparse/main": {
+		"description": "Genera didascalie GIF",
+
+		"group.required": "Argomenti obbligatori",
+		"group.optional": "Argomenti opzionali",
+		"group.style": "Argomenti di stile",
+		"group.optimization": "Argomenti di ottimizzazione",
+		"group.switch": "Argomenti di commutazione",
+
+		"required.visual": "Percorso assoluto / URL del file visivo statico/dinamico esistente",
+		"required.text": "Testo della didascalia",
+
+		"optional.audio": "Percorso assoluto / URL del file audio esistente. Tentativi di recuperare il suono dall'input visivo se non fornito",
+		"optional.text_wrap": "Limite di caratteri di avvolgimento del testo",
+		"optional.output_directory": "Directory di destinazione del file di output (destinazione)",
+		"optional.verbosity": "-1 per nulla, 0 solo errori, 1 per tutto",
+
+		"style.font": "Percorso del file esistente per il font applicato al campo didascalia. Se non è assoluto, cerca nella directory dei font degli asset",
+		"style.text_color": "Colore del testo del campo didascalia (esadecimale)",
+		"style.background_color": "Colore di sfondo del campo didascalia (esadecimale)",
+		"style.emoji_style": "Stile/vendor dell'immagine emoji",
+		"style.width": "Scala l'immagine fino a quando una delle sue dimensioni si adatta alla dimensione data. Utilizza il campionatore Lanczos",
+
+		"optimization.audio_bitrate": "Bitrate audio del file di output video (kb/s)",
+		"optimization.delay_count": "Conteggio del ritardo del file di output immagine dinamica. Se non presente, modifica il file di input visivo se non è statico",
+		"optimization.loop_count": "Conteggio del loop del file di output immagine dinamica. 0 per l'infinito",
+		"optimization.lossy": "Fattore di ottimizzazione del file di output immagine dinamica",
+
+		"switch.force_gif": "Determina se il file di output deve essere salvato forzatamente come GIF",
+		"switch.webm_encode": "Codifica il video in WebM (VP9). Richiede più tempo!",
+		"switch.keep_session_directory": "Non rimuovere la directory della sessione",
+		"switch.no_open_directory": "Non aprire la posizione del file di output dopo la sua generazione. Applicabile solo se verbosity > -1",
+		"switch.no_optimization": "Non ottimizzare il file di output",
+		"switch.force_primary_language": "Forza la lingua inglese in tutte le stringhe",
+
+		"main.help": "Mostra questo messaggio"
+	},
+	"update_notification": {
+		"notification": "Stai utilizzando una versione non aggiornata del programma - si prega di considerare l'aggiornamento"
+	},
+	"audio": {
+		"get_channels.run": "Esecuzione del comando di recupero dei canali audio",
+		"get_channels.result": "Canali audio recuperati: {channels}",
+
+		"convert.extension": "Conversione audio al formato {target_extension}",
+		"normalize.run": "Normalizzazione audio a {level} dBFS",
+		"no_silent.run": "Esecuzione del comando di rilevamento del silenzio"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: L'emoji \"{character}\" non è supportato sullo stile emoji \"{style_name}\". Elaborazione dell'immagine annullata",
+
+		"get_emoji_image.unsupported": "Lo stile \"{style_name}\" non è supportato",
+		"get_emoji_image.error_fetch": "Si è verificato un problema nel recuperare l'immagine dell'emoji"
+	},
+	"video": {
+		"frame_rate.run": "Recupero del frame rate dal file di input visivo",
+		"frame_rate.error": "Impossibile analizzare il frame rate, utilizzo del valore predefinito del programma",
+
+		"frames.extract.run": "Esecuzione del comando di estrazione dei frame",
+		"create.palette.run": "Generazione del file immagine della tavolozza",
+		"create.dynamic.run": "Creazione dell'immagine dinamica",
+		"save.static_as_dynamic": "Salvataggio dell'immagine statica come GIF",
+		"create.dynamic.no_sound.is_dynamic": "Nessun file audio è stato fornito e l'input visivo è dinamico, creazione di una GIF",
+		"frames.combine.run": "Esecuzione del comando di combinazione frame e audio (video)"
+	},
+	"argparse/settings": {
+		"no_connection": "Nessuna connessione internet",
+		"emoji.no_connection": "Il recupero dell'emoji dall'API non sarà possibile",
+
+		"url.ok": "L'URL è stato recuperato con successo",
+		"url.invalid": "L'URL non è valido",
+
+		"visual.parse_from_url": "Tentativo di analizzare l'URL dell'immagine diretta dalla sorgente della pagina",
+
+		"visual.download.run": "Download dell'URL visivo di input",
+		"visual.download.no_connection": "Impossibile recuperare i media visivi dall'URL/sorgente di input",
+
+		"audio.download.run": "Download dell'URL audio di input",
+		"audio.download.no_connection": "Impossibile recuperare i media audio dall'URL/sorgente di input",
+
+		"audio.empty_no_sound": "L'argomento audio non è stato fornito e l'input visivo non ha suono",
+
+		"visual.wrong_type": "Il percorso dell'input visivo esiste, ma non è un file!",
+		"visual.not_exists": "Il file di input visivo non esiste!",
+
+		"audio.wrong_type": "Il percorso dell'input audio esiste, ma non è un file!",
+		"audio.not_exists": "Il file di input audio non esiste!",
+		"output_without_sound": "Il file di output sarà salvato in un formato che non supporta il suono",
+
+		"output_directory.wrong_type": "Esiste già un file con il percorso equivalente alla directory di output!",
+
+		"font.wrong_type": "Esiste già una directory con il percorso equivalente al file del font!",
+		"font.not_exists": "Il file del font di input non esiste!",
+
+		"show.visual": "File di input visivo",
+		"show.audio": "File di input audio",
+		"show.font": "File di input del font",
+		"show.output_directory": "Directory di output",
+		"show.session_directory": "Directory di sessione"
+	},
+	"process": {
+		"frames.extract": "Estrazione dei frame",
+		"caption.create": "Generazione didascalia",
+		"caption.apply": "Applicazione della didascalia a {frames_amount} frame",
+		"frames.save_01": "Salvataggio frame",
+		"frames.combine": "Combinazione di {frames_amount} frame",
+		"wait": "Ciò potrebbe richiedere del tempo",
+		"output.optimize": "Ottimizzazione del file di output",
+		"output.create": "Generazione del file di output",
+		"output.error": "Il file di output non esiste!"
+	},
+	"ending": {
+		"output.saving": "Salvataggio del file di output in \"{output_file_path}\"",
+		"info.runtime": "Tempo di esecuzione",
+		"info.file.size": "Dimensione del file di output",
+		"info.file.type": "Tipo di file di output"
+	}
+}

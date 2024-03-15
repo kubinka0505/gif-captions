@@ -1,0 +1,136 @@
+{
+	"main": {
+
+		"pkg_not_found.exe": "Exécutable {package_name} non trouvé dans la variable d'environnement {variable_name}",
+		"pkg_not_installed": "Le package {package_name} n'est pas installé",
+		"open_in_explorer": "Ouverture du fichier dans l'explorateur"
+	},
+	"pkg": {
+		"not_found": "{package_name} n'a pas été trouvé !"
+	},
+	"optim": {
+		"static.grayscale": "L'image statique a été convertie en mode couleur gris",
+		"static.run": "Exécution de l'optimiseur d'image statique avec une limite de {max_colors} couleurs",
+
+		"dynamic.delay_count": "Le débit d'images n'a pas été fourni, détection par le package",
+		"dynamic.delay_count.set": "Le nombre de retards d'images dynamiques sera défini sur {delay_count}",
+		"dynamic.run": "Exécution de l'optimiseur d'image dynamique avec un décompte de retards de {delay_count} et un décompte de boucles de {loop_count}"
+	},
+	"argparse/main": {
+		"description": "Générer des légendes GIF",
+
+		"group.required": "Arguments requis",
+		"group.optional": "Arguments optionnels",
+		"group.style": "Arguments de style",
+		"group.optimization": "Arguments d'optimisation",
+		"group.switch": "Arguments de commutation",
+
+		"required.visual": "Chemin absolu / URL du fichier visuel statique/dynamique existant",
+		"required.text": "Texte de la légende",
+
+		"optional.audio": "Chemin absolu / URL du fichier audio existant. Tente de récupérer le son à partir de l'entrée visuelle si non fourni",
+		"optional.text_wrap": "Limite de caractères de saut de ligne de texte",
+		"optional.output_directory": "Répertoire cible du fichier de sortie (destination)",
+		"optional.verbosity": "-1 pour rien, 0 pour les erreurs uniquement, 1 pour tout",
+
+		"style.font": "Chemin de fichier existant pour la police appliquée à la zone de légende. Si non absolu, recherche dans le répertoire de polices des ressources",
+		"style.text_color": "Couleur du texte de la zone de légende (hex)",
+		"style.background_color": "Couleur de fond de la zone de légende (hex)",
+		"style.emoji_style": "Style/vendeur d'image emoji",
+		"style.width": "Echelle l'image jusqu'à ce qu'une de ses dimensions corresponde à la taille donnée. Utilise le rééchantillonneur de Lanczos",
+
+		"optimization.audio_bitrate": "Débit audio du fichier de sortie vidéo (kb/s)",
+		"optimization.delay_count": "Décompte de retard du fichier de sortie image dynamique. S'il n'y en a pas, modifie le fichier d'entrée visuelle s'il n'est pas statique",
+		"optimization.loop_count": "Décompte de boucles du fichier de sortie image dynamique. 0 pour l'infini",
+		"optimization.lossy": "Facteur d'optimisation du fichier de sortie image dynamique",
+
+		"switch.force_gif": "Détermine si le fichier de sortie doit être sauvegardé de force en tant que GIF",
+		"switch.webm_encode": "Encoder la vidéo en WebM (VP9). Prend plus de temps !",
+		"switch.keep_session_directory": "Ne pas supprimer le répertoire de session",
+		"switch.no_open_directory": "Ne pas ouvrir l'emplacement du fichier de sortie après sa génération. Applicable uniquement si la verbosité > -1",
+		"switch.no_optimization": "Ne pas optimiser le fichier de sortie",
+		"switch.force_primary_language": "Forcer la langue anglaise dans toutes les chaînes",
+
+		"main.help": "Affiche ce message"
+	},
+	"update_notification": {
+		"notification": "Vous n'utilisez pas la dernière version du programme - veuillez envisager de mettre à jour"
+	},
+	"audio": {
+		"get_channels.run": "Exécution de la commande de récupération des canaux audio",
+		"get_channels.result": "Canaux audio récupérés : {channels}",
+
+		"convert.extension": "Conversion audio au format {target_extension}",
+		"normalize.run": "Normalisation audio à {level} dBFS",
+		"no_silent.run": "Exécution de la commande de détection de silence"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name} : L'emoji \"{character}\" n'est pas pris en charge sur le style d'emoji \"{style_name}\". Traitement de l'image annulé",
+
+		"get_emoji_image.unsupported": "Le style \"{style_name}\" n'est pas pris en charge",
+		"get_emoji_image.error_fetch": "Un problème est survenu lors de la récupération de l'image emoji"
+	},
+	"video": {
+		"frame_rate.run": "Récupération du débit d'images à partir du fichier d'entrée visuelle",
+		"frame_rate.error": "Impossible d'analyser le débit d'images, utilisation par défaut du programme",
+
+		"frames.extract.run": "Exécution de la commande d'extraction des images",
+		"create.palette.run": "Génération du fichier d'image de palette",
+		"create.dynamic.run": "Création de l'image dynamique",
+		"save.static_as_dynamic": "Sauvegarde de l'image statique en tant que GIF",
+		"create.dynamic.no_sound.is_dynamic": "Aucun fichier audio n'a été fourni et l'entrée visuelle est dynamique, création du GIF",
+		"frames.combine.run": "Exécution de la commande de combinaison d'images et de son (vidéo)"
+	},
+	"argparse/settings": {
+		"no_connection": "Pas de connexion Internet",
+		"emoji.no_connection": "La récupération d'emoji à partir de l'API ne sera pas possible",
+
+		"url.ok": "L'URL a été récupérée avec succès",
+		"url.invalid": "L'URL est invalide",
+
+		"visual.parse_from_url": "Tentative d'analyse de l'URL d'image directe à partir de la source de la page",
+
+		"visual.download.run": "Téléchargement de l'URL visuelle d'entrée",
+		"visual.download.no_connection": "Impossible de récupérer les médias visuels à partir de l'URL/source d'entrée",
+
+		"audio.download.run": "Téléchargement de l'URL audio d'entrée",
+		"audio.download.no_connection": "Impossible de récupérer les médias audio à partir de l'URL/source d'entrée",
+
+		"audio.empty_no_sound": "L'argument audio n'a pas été fourni et l'entrée visuelle n'a pas de son",
+
+		"visual.wrong_type": "Le chemin d'entrée visuelle existe, mais ce n'est pas un fichier !",
+		"visual.not_exists": "Le fichier d'entrée visuelle n'existe pas !",
+
+		"audio.wrong_type": "Le chemin d'entrée audio existe, mais ce n'est pas un fichier !",
+		"audio.not_exists": "Le fichier audio d'entrée n'existe pas !",
+		"output_without_sound": "Le fichier de sortie sera enregistré dans un format ne prenant pas en charge le son",
+
+		"output_directory.wrong_type": "Un fichier avec un chemin équivalent au répertoire de sortie existe déjà !",
+
+		"font.wrong_type": "Un répertoire avec un chemin équivalent au fichier de police existe déjà !",
+		"font.not_exists": "Le fichier de police d'entrée n'existe pas !",
+
+		"show.visual": "Fichier d'entrée visuelle",
+		"show.audio": "Fichier audio d'entrée",
+		"show.font": "Fichier de police d'entrée",
+		"show.output_directory": "Répertoire de sortie",
+		"show.session_directory": "Répertoire de session"
+	},
+	"process": {
+		"frames.extract": "Extraction des images",
+		"caption.create": "Génération de la légende",
+		"caption.apply": "Application de la légende à {frames_amount} images",
+		"frames.save_01": "Sauvegarde de l'image",
+		"frames.combine": "Combinaison de {frames_amount} images",
+		"wait": "Cela peut prendre un certain temps",
+		"output.optimize": "Optimisation du fichier de sortie",
+		"output.create": "Génération du fichier de sortie",
+		"output.error": "Le fichier de sortie n'existe pas !"
+	},
+	"ending": {
+		"output.saving": "Sauvegarde du fichier de sortie sous \"{output_file_path}\"",
+		"info.runtime": "Durée d'exécution",
+		"info.file.size": "Taille du fichier de sortie",
+		"info.file.type": "Type de fichier de sortie"
+	}
+}

@@ -1,0 +1,115 @@
+{
+	"main": {
+		"pkg_not_found.exe": "{package_name} の実行ファイルは {variable_name} 環境変数の中に見つかりませんでした",
+		"pkg_not_installed": "{package_name} パッケージがインストールされていません",
+		"open_in_explorer": "エクスプローラーでファイルを開く"
+	},
+	"pkg": {
+		"not_found": "{package_name} が見つかりませんでした！"
+	},
+	"optim": {
+		"static.grayscale": "静的イメージがグレースケールカラーモードに変換されました",
+		"static.run": "{max_colors} 色の制限で静的イメージオプティマイザを実行中",
+
+		"dynamic.delay_count": "フレームレートが指定されていません。パッケージによって検出されます",
+		"dynamic.delay_count.set": "動的イメージ遅延カウントが {delay_count} に設定されます",
+		"dynamic.run": "動的イメージオプティマイザを遅延カウント {delay_count} とループカウント {loop_count} で実行中"
+	},
+	"argparse/main": {
+		"description": "GIF キャプションを生成する",
+		"group.required": "必須引数",
+		"group.optional": "オプション引数",
+		"group.style": "スタイル引数",
+		"group.optimization": "最適化引数",
+		"group.switch": "スイッチ引数",
+		"required.visual": "既存の静的/動的ビジュアルファイルの絶対パス/URL",
+		"required.text": "キャプションテキスト",
+		"optional.audio": "既存のオーディオファイルの絶対パス/URL。提供されていない場合はビジュアル入力から音声を取得しようとします",
+		"optional.text_wrap": "テキストの折り返し文字制限",
+		"optional.output_directory": "出力ファイルのターゲットディレクトリ（宛先）",
+		"optional.verbosity": "何もしない場合は -1、エラーのみの場合は 0、すべての場合は 1",
+		"style.font": "キャプションフィールドに適用される既存のフォントファイルパス。絶対パスでない場合、assets フォントディレクトリ内を検索します",
+		"style.text_color": "キャプションフィールドのテキストカラー（hex）",
+		"style.background_color": "キャプションフィールドの背景色（hex）",
+		"style.emoji_style": "絵文字画像スタイル/ベンダー",
+		"style.width": "指定されたサイズにフィットするようにイメージをスケーリングします。ランコシュリサンプラーを使用します",
+		"optimization.audio_bitrate": "ビデオ出力ファイルのオーディオビットレート（kb/s）",
+		"optimization.delay_count": "動的イメージ出力ファイルの遅延カウント。なしの場合は、静的でない場合にビジュアル入力ファイルを修正します",
+		"optimization.loop_count": "動的イメージ出力ファイルのループカウント。無限の場合は 0",
+		"optimization.lossy": "動的イメージ出力ファイルの最適化ファクター",
+		"switch.force_gif": "出力ファイルを強制的に GIF として保存するかどうかを決定します",
+		"switch.webm_encode": "ビデオを WebM（VP9）にエンコードします。時間がかかります！",
+		"switch.keep_session_directory": "セッションディレクトリを削除しないでください",
+		"switch.no_open_directory": "生成後に出力ファイルの場所を開かないでください。verbosit > -1 の場合のみ適用されます",
+		"switch.no_optimization": "出力ファイルを最適化しないでください",
+		"switch.force_primary_language": "すべての文字列で英語を強制します",
+		"main.help": "このメッセージを表示します"
+	},
+	"update_notification": {
+		"notification": "プログラムの最新バージョンを使用していません - アップデートを検討してください"
+	},
+	"audio": {
+		"get_channels.run": "オーディオチャンネル取得コマンドを実行中",
+		"get_channels.result": "オーディオチャンネルが取得されました: {channels}",
+		"convert.extension": "オーディオを {target_extension} フォーマットに変換中",
+		"normalize.run": "オーディオを {level} dBFS に正規化中",
+		"no_silent.run": "無音検出コマンドを実行中"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: \"{character}\" 絵文字は \"{style_name}\" 絵文字スタイルでサポートされていません。イメージ処理が中止されました",
+		"get_emoji_image.unsupported": "\"{style_name}\" スタイルはサポートされていません",
+		"get_emoji_image.error_fetch": "絵文字画像の取得に問題が発生しました"
+	},
+	"video": {
+		"frame_rate.run": "ビジュアル入力ファイルからフレームレートを取得中",
+		"frame_rate.error": "フレームレートを解析できません。プログラムのデフォルトを使用します",
+		"frames.extract.run": "フレーム抽出コマンドを実行中",
+		"create.palette.run": "パレット画像ファイルを生成中",
+		"create.dynamic.run": "動的イメージを作成中",
+		"save.static_as_dynamic": "静的イメージを GIF として保存中",
+		"create.dynamic.no_sound.is_dynamic": "音声ファイルが提供されておらず、ビジュアル入力が動的であるため、GIF を作成中",
+		"frames.combine.run": "フレームとオーディオの組み合わせコマンド（ビデオ）を実行中"
+	},
+	"argparse/settings": {
+		"no_connection": "インターネットに接続していません",
+		"emoji.no_connection": "API からの絵文字の取得ができません",
+		"url.ok": "URL を正常に取得しました",
+		"url.invalid": "URL が無効です",
+		"visual.parse_from_url": "直接画像 URL をページソースから解析しようとしています",
+		"visual.download.run": "入力ビジュアル URL をダウンロード中",
+		"visual.download.no_connection": "入力 URL/ソースからビジュアルメディアを取得できません",
+		"audio.download.run": "オーディオ入力 URL をダウンロード中",
+		"audio.download.no_connection": "入力 URL/ソースからオーディオメディアを取得できません",
+		"audio.empty_no_sound": "オーディオ引数が提供されず、ビジュアル入力に音がありません",
+		"visual.wrong_type": "ビジュアル入力パスが存在しますが、ファイルではありません！",
+		"visual.not_exists": "ビジュアル入力ファイルが存在しません！",
+		"audio.wrong_type": "オーディオ入力パスが存在しますが、ファイルではありません！",
+		"audio.not_exists": "オーディオ入力ファイルが存在しません！",
+		"output_without_sound": "サウンドをサポートしない形式の出力ファイルに保存されます",
+		"output_directory.wrong_type": "出力ディレクトリと同等のパスを持つファイルが既に存在します！",
+		"font.wrong_type": "フォントファイルと同等のパスを持つディレクトリが既に存在します！",
+		"font.not_exists": "入力フォントファイルが存在しません！",
+		"show.visual": "ビジュアル入力ファイル",
+		"show.audio": "オーディオ入力ファイル",
+		"show.font": "フォント入力ファイル",
+		"show.output_directory": "出力ディレクトリ",
+		"show.session_directory": "セッションディレクトリ"
+	},
+	"process": {
+		"frames.extract": "フレームを抽出中",
+		"caption.create": "キャプションを生成中",
+		"caption.apply": "{frames_amount} フレームにキャプションを適用中",
+		"frames.save_01": "フレームを保存中",
+		"frames.combine": "{frames_amount} フレームを組み合わせ中",
+		"wait": "しばらくお待ちください",
+		"output.optimize": "出力ファイルを最適化中",
+		"output.create": "出力ファイルを生成中",
+		"output.error": "出力ファイルが存在しません！"
+	},
+	"ending": {
+		"output.saving": "出力ファイルを \"{output_file_path}\" に保存中",
+		"info.runtime": "実行時間",
+		"info.file.size": "出力ファイルサイズ",
+		"info.file.type": "出力ファイルタイプ"
+	}
+}

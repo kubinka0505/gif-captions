@@ -1,0 +1,135 @@
+{
+	"main": {
+		"pkg_not_found.exe": "O executável {package_name} não foi encontrado dentro da variável de ambiente {variable_name}",
+		"pkg_not_installed": "O pacote {package_name} não está instalado",
+		"open_in_explorer": "Abrindo arquivo no explorador"
+	},
+	"pkg": {
+		"not_found": "{package_name} não foi encontrado!"
+	},
+	"optim": {
+		"static.grayscale": "A imagem estática foi convertida para o modo de cor em escala de cinza",
+		"static.run": "Executando otimizador de imagem estática com limite de {max_colors} cores",
+
+		"dynamic.delay_count": "A taxa de quadros não foi fornecida, detectando pelo pacote",
+		"dynamic.delay_count.set": "A contagem de atraso de imagem dinâmica será definida para {delay_count}",
+		"dynamic.run": "Executando otimizador de imagem dinâmica com contagem de atraso {delay_count} e contagem de loop {loop_count}"
+	},
+	"argparse/main": {
+		"description": "Gerar legendas GIF",
+
+		"group.required": "Argumentos obrigatórios",
+		"group.optional": "Argumentos opcionais",
+		"group.style": "Argumentos de estilo",
+		"group.optimization": "Argumentos de otimização",
+		"group.switch": "Argumentos de comutação",
+
+		"required.visual": "Caminho / URL absoluto do arquivo visual estático/dinâmico existente",
+		"required.text": "Texto da legenda",
+
+		"optional.audio": "Caminho / URL absoluto do arquivo de áudio existente. Tenta recuperar o som da entrada visual se não fornecido",
+		"optional.text_wrap": "Limite de caracteres de quebra de texto",
+		"optional.output_directory": "Diretório de destino do arquivo de saída (destino)",
+		"optional.verbosity": "-1 para nada, 0 apenas para erros, 1 para tudo",
+
+		"style.font": "Caminho do arquivo existente para a fonte aplicada ao campo de legenda. Se não for absoluto, busca no diretório de fontes de ativos",
+		"style.text_color": "Cor do texto do campo de legenda (hexadecimal)",
+		"style.background_color": "Cor de fundo do campo de legenda (hexadecimal)",
+		"style.emoji_style": "Estilo/fornecedor da imagem de emoji",
+		"style.width": "Dimensiona a imagem até que uma de suas dimensões se ajuste ao tamanho fornecido. Usa o redimensionador Lanczos",
+
+		"optimization.audio_bitrate": "Bitrate de áudio do arquivo de saída de vídeo (kb/s)",
+		"optimization.delay_count": "Contagem de atraso do arquivo de saída de imagem dinâmica. Se nenhum, modifica o arquivo de entrada visual se não for estático",
+		"optimization.loop_count": "Contagem de loop do arquivo de saída de imagem dinâmica. 0 para infinito",
+		"optimization.lossy": "Fator de otimização do arquivo de saída de imagem dinâmica",
+
+		"switch.force_gif": "Determina se o arquivo de saída deve ser forçosamente salvo como GIF",
+		"switch.webm_encode": "Codifica o vídeo para WebM (VP9). Demora mais!",
+		"switch.keep_session_directory": "Não remover o diretório da sessão",
+		"switch.no_open_directory": "Não abrir a localização do arquivo de saída após sua geração. Aplicável apenas se verbosity > -1",
+		"switch.no_optimization": "Não otimizar o arquivo de saída",
+		"switch.force_primary_language": "Forçar o idioma inglês em todas as strings",
+
+		"main.help": "Mostra esta mensagem"
+	},
+	"update_notification": {
+		"notification": "Você não está usando a versão mais recente do programa - por favor, considere atualizar"
+	},
+	"audio": {
+		"get_channels.run": "Executando comando de recuperação de canais de áudio",
+		"get_channels.result": "Canais de áudio recuperados: {channels}",
+
+		"convert.extension": "Convertendo áudio para formato {target_extension}",
+		"normalize.run": "Normalizando áudio para {level} dBFS",
+		"no_silent.run": "Executando comando de detecção de silêncio"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: O emoji \"{character}\" não é suportado no estilo de emoji \"{style_name}\". Processamento de imagem abortado",
+
+		"get_emoji_image.unsupported": "O estilo \"{style_name}\" não é suportado",
+		"get_emoji_image.error_fetch": "Ocorreu um problema ao buscar a imagem do emoji"
+	},
+	"video": {
+		"frame_rate.run": "Recuperando taxa de quadros do arquivo de entrada visual",
+		"frame_rate.error": "Não é possível analisar a taxa de quadros, usando o padrão do programa",
+
+		"frames.extract.run": "Executando comando de extração de quadros",
+		"create.palette.run": "Gerando arquivo de paleta de imagem",
+		"create.dynamic.run": "Criando imagem dinâmica",
+		"save.static_as_dynamic": "Salvando imagem estática como GIF",
+		"create.dynamic.no_sound.is_dynamic": "Nenhum arquivo de áudio foi fornecido e a entrada visual é dinâmica, criando GIF",
+		"frames.combine.run": "Executando comando de combinação de quadros e áudio (vídeo)"
+	},
+	"argparse/settings": {
+		"no_connection": "Sem conexão com a internet",
+		"emoji.no_connection": "A recuperação de emojis da API não será possível",
+
+		"url.ok": "URL foi recuperada com sucesso",
+		"url.invalid": "URL é inválido",
+
+		"visual.parse_from_url": "Tentando analisar a URL direta da imagem a partir do código-fonte da página",
+
+		"visual.download.run": "Baixando URL visual de entrada",
+		"visual.download.no_connection": "Não é possível buscar a mídia visual a partir da URL/fonte de entrada",
+
+		"audio.download.run": "Baixando URL de entrada de áudio",
+		"audio.download.no_connection": "Não é possível buscar a mídia de áudio a partir da URL/fonte de entrada",
+
+		"audio.empty_no_sound": "O argumento de áudio não foi fornecido e a entrada visual não possui som",
+
+		"visual.wrong_type": "O caminho de entrada visual existe, mas não é um arquivo!",
+		"visual.not_exists": "O arquivo de entrada visual não existe!",
+
+		"audio.wrong_type": "O caminho de entrada de áudio existe, mas não é um arquivo!",
+		"audio.not_exists": "O arquivo de entrada de áudio não existe!",
+		"output_without_sound": "O arquivo de saída será salvo em um formato que não suporta som",
+
+		"output_directory.wrong_type": "Um arquivo com caminho equivalente ao diretório de saída já existe!",
+
+		"font.wrong_type": "Um diretório com caminho equivalente ao arquivo de fonte já existe!",
+		"font.not_exists": "O arquivo de fonte de entrada não existe!",
+
+		"show.visual": "Arquivo de entrada visual",
+		"show.audio": "Arquivo de entrada de áudio",
+		"show.font": "Arquivo de fonte de entrada",
+		"show.output_directory": "Diretório de saída",
+		"show.session_directory": "Diretório da sessão"
+	},
+	"process": {
+		"frames.extract": "Extraindo quadros",
+		"caption.create": "Gerando legenda",
+		"caption.apply": "Aplicando legenda a {frames_amount} quadros",
+		"frames.save_01": "Salvando quadro",
+		"frames.combine": "Combinando {frames_amount} quadros",
+		"wait": "Isso pode levar um tempo",
+		"output.optimize": "Otimizando arquivo de saída",
+		"output.create": "Gerando arquivo de saída",
+		"output.error": "O arquivo de saída não existe!"
+	},
+	"ending": {
+		"output.saving": "Salvando arquivo de saída em \"{output_file_path}\"",
+		"info.runtime": "Tempo de execução",
+		"info.file.size": "Tamanho do arquivo de saída",
+		"info.file.type": "Tipo de arquivo de saída"
+	}
+}

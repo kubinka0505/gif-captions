@@ -1,0 +1,115 @@
+{
+	"main": {
+		"pkg_not_found.exe": "{package_name} yürütülebilir dosyası {variable_name} ortam değişkeni içinde bulunamadı",
+		"pkg_not_installed": "{package_name} paketi yüklü değil",
+		"open_in_explorer": "Dosyayı kâşifte açma"
+	},
+	"pkg": {
+		"not_found": "{package_name} bulunamadı!"
+	},
+	"optim": {
+		"static.grayscale": "Statik görüntü gri renk moduna dönüştürüldü",
+		"static.run": "{max_colors} renk sınırı ile statik görüntü iyileştirici çalıştırılıyor",
+
+		"dynamic.delay_count": "Kare hızı belirtilmedi, paket tarafından algılanıyor",
+		"dynamic.delay_count.set": "Dinamik görüntü gecikme sayısı {delay_count} olarak ayarlanacak",
+		"dynamic.run": "Dinamik görüntü iyileştirici {delay_count} gecikme sayısı ve {loop_count} döngü sayısı ile çalıştırılıyor"
+	},
+	"argparse/main": {
+		"description": "GIF altyazıları oluştur",
+		"group.required": "Zorunlu argümanlar",
+		"group.optional": "İsteğe bağlı argümanlar",
+		"group.style": "Stil argümanları",
+		"group.optimization": "Optimizasyon argümanları",
+		"group.switch": "Anahtar argümanlar",
+		"required.visual": "Mevcut statik/dinamik görsel dosyanın mutlak yolu / URL'si",
+		"required.text": "Altyazı metni",
+		"optional.audio": "Mevcut ses dosyasının mutlak yolu / URL'si. Sağlanmazsa görsel girişten sesi almaya çalışır",
+		"optional.text_wrap": "Metin sarma karakter sınırı",
+		"optional.output_directory": "Çıkış dosyası hedef dizini (hedef)",
+		"optional.verbosity": "Hiçbir şey için -1, yalnızca hatalar için 0, her şey için 1",
+		"style.font": "Altyazı alanına uygulanan yazı tipi dosyasının mevcut yolu. Mutlak değilse, varlık yazı tipi dizininde arar",
+		"style.text_color": "Altyazı alanı metin rengi (hex)",
+		"style.background_color": "Altyazı alanı arka plan rengi (hex)",
+		"style.emoji_style": "Emoji resim stili/tedarikçi",
+		"style.width": "Görüntüyü verilen boyut sığacak şekilde ölçekler. Lanczos yeniden örnekleyiciyi kullanır",
+		"optimization.audio_bitrate": "Video çıkış dosyasının ses bit hızı (kb/sn)",
+		"optimization.delay_count": "Dinamik görüntü çıkış dosyasının gecikme sayısı. Yoksa, statik değilse görsel giriş dosyasını değiştirir",
+		"optimization.loop_count": "Dinamik görüntü çıkış dosyasının döngü sayısı. Sonsuzluk için 0",
+		"optimization.lossy": "Dinamik görüntü çıkış dosyası optimizasyon faktörü",
+		"switch.force_gif": "Çıkış dosyasının zorla GIF olarak kaydedilip kaydedilmeyeceğini belirler",
+		"switch.webm_encode": "Videoyu WebM (VP9) olarak kodlar. Daha fazla zaman alır!",
+		"switch.keep_session_directory": "Oturum dizinini kaldırmayın",
+		"switch.no_open_directory": "Çıkış dosyasının oluşturulmasından sonra dosya konumunu açmayın. Yalnızca verbosity > -1 ise geçerlidir",
+		"switch.no_optimization": "Çıkış dosyasını optimize etmeyin",
+		"switch.force_primary_language": "Tüm dizelerde İngilizce dilini zorunlu kıl",
+		"main.help": "Bu mesajı göster"
+	},
+	"update_notification": {
+		"notification": "Programın en son sürümünü kullanmıyorsunuz - lütfen güncellemeyi düşünün"
+	},
+	"audio": {
+		"get_channels.run": "Ses kanallarını alma komutu çalışıyor",
+		"get_channels.result": "Ses kanalları alındı: {channels}",
+		"convert.extension": "Sesi {target_extension} biçimine dönüştürme",
+		"normalize.run": "Sesi {level} dBFS'ye normalleştirme",
+		"no_silent.run": "Sessizlik tespiti komutu çalışıyor"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: \"{style_name}\" emoji stili üzerinde \"{character}\" emoji desteklenmiyor. Görüntü işleme iptal edildi",
+		"get_emoji_image.unsupported": "\"{style_name}\" stili desteklenmiyor",
+		"get_emoji_image.error_fetch": "Emoji resmi alma sorunu oluştu"
+	},
+	"video": {
+		"frame_rate.run": "Görsel giriş dosyasından kare hızı alınıyor",
+		"frame_rate.error": "Kare hızı ayrıştırılamıyor, programın varsayılanını kullanma",
+		"frames.extract.run": "Çerçeveler çıkarma komutu çalışıyor",
+		"create.palette.run": "Palet görüntü dosyası oluşturma",
+		"create.dynamic.run": "Dinamik görüntü oluşturma",
+		"save.static_as_dynamic": "Statik görüntüyü GIF olarak kaydetme",
+		"create.dynamic.no_sound.is_dynamic": "Hiçbir ses dosyası sağlanmadı ve görsel giriş dinamik, GIF oluşturuluyor",
+		"frames.combine.run": "Çerçeveler ve ses birleştirme komutu çalışıyor (video)"
+	},
+	"argparse/settings": {
+		"no_connection": "İnternet bağlantısı yok",
+		"emoji.no_connection": "API'den emoji almak mümkün olmayacak",
+		"url.ok": "URL başarıyla alındı",
+		"url.invalid": "URL geçersiz",
+		"visual.parse_from_url": "Doğrudan görüntü URL'sinin sayfa kaynağından ayrıştırılmaya çalışılıyor",
+		"visual.download.run": "Giriş görsel URL'si indiriliyor",
+		"visual.download.no_connection": "Giriş URL/kaynaktan görsel medya alınamıyor",
+		"audio.download.run": "Ses giriş URL'si indiriliyor",
+		"audio.download.no_connection": "Giriş URL/kaynaktan ses medyası alınamıyor",
+		"audio.empty_no_sound": "Ses argümanı sağlanmadı ve görsel girişte ses yok",
+		"visual.wrong_type": "Görsel giriş yolu var, ancak dosya değil!",
+		"visual.not_exists": "Görsel giriş dosyası mevcut değil!",
+		"audio.wrong_type": "Ses giriş yolu var, ancak dosya değil!",
+		"audio.not_exists": "Ses giriş dosyası mevcut değil!",
+		"output_without_sound": "Çıkış dosyası, sesi desteklemeyen bir biçimde kaydedilecek",
+		"output_directory.wrong_type": "Çıkış dizinine eşdeğer dosya zaten var!",
+		"font.wrong_type": "Yazı tipi dosyasına eşdeğer bir dizin zaten var!",
+		"font.not_exists": "Giriş yazı tipi dosyası mevcut değil!",
+		"show.visual": "Görsel giriş dosyası",
+		"show.audio": "Ses giriş dosyası",
+		"show.font": "Yazı tipi giriş dosyası",
+		"show.output_directory": "Çıkış dizini",
+		"show.session_directory": "Oturum dizini"
+	},
+	"process": {
+		"frames.extract": "Çerçeveler çıkartılıyor",
+		"caption.create": "Altyazı oluşturuluyor",
+		"caption.apply": "{frames_amount} kareye altyazı uygulanıyor",
+		"frames.save_01": "Kare kaydediliyor",
+		"frames.combine": "{frames_amount} çerçeve birleştiriliyor",
+		"wait": "Bu biraz zaman alabilir",
+		"output.optimize": "Çıkış dosyası optimize ediliyor",
+		"output.create": "Çıkış dosyası oluşturuluyor",
+		"output.error": "Çıkış dosyası mevcut değil!"
+	},
+	"ending": {
+		"output.saving": "Çıkış dosyası \"{output_file_path}\" olarak kaydediliyor",
+		"info.runtime": "Çalışma süresi",
+		"info.file.size": "Çıkış dosyası boyutu",
+		"info.file.type": "Çıkış dosyası türü"
+	}
+}

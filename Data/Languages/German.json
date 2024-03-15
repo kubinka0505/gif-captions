@@ -1,0 +1,135 @@
+{
+	"main": {
+		"pkg_not_found.exe": "{package_name} Ausführbare Datei wurde nicht innerhalb der {variable_name} Umgebungsvariable gefunden",
+		"pkg_not_installed": "{package_name} Paket ist nicht installiert",
+		"open_in_explorer": "Öffnen der Datei im Explorer"
+	},
+	"pkg": {
+		"not_found": "{package_name} wurde nicht gefunden!"
+	},
+	"optim": {
+		"static.grayscale": "Statisches Bild wurde in den Graustufen-Farbmodus konvertiert",
+		"static.run": "Ausführen des statischen Bildoptimierers mit {max_colors} Farblimit",
+
+		"dynamic.delay_count": "Bildfrequenz wurde nicht angegeben, wird durch Paket ermittelt",
+		"dynamic.delay_count.set": "Die dynamische Bildverzögerung wird auf {delay_count} festgelegt",
+		"dynamic.run": "Ausführen des dynamischen Bildoptimierers mit Verzögerungszähler {delay_count} und Schleifenzähler {loop_count}"
+	},
+	"argparse/main": {
+		"description": "GIF-Untertitel generieren",
+
+		"group.required": "Erforderliche Argumente",
+		"group.optional": "Optionale Argumente",
+		"group.style": "Styling-Argumente",
+		"group.optimization": "Optimierungs-Argumente",
+		"group.switch": "Schalter-Argumente",
+
+		"required.visual": "Absoluter Pfad / URL des vorhandenen statischen/dynamischen visuellen Dateis",
+		"required.text": "Untertiteltext",
+
+		"optional.audio": "Absoluter Pfad / URL der vorhandenen Audiodatei. Versucht, den Ton aus der visuellen Eingabe abzurufen, wenn nicht bereitgestellt",
+		"optional.text_wrap": "Textumbruch-Zeichenlimit",
+		"optional.output_directory": "Zielverzeichnis für Ausgabedatei (Ziel)",
+		"optional.verbosity": "-1 für nichts, 0 nur für Fehler, 1 für alles",
+
+		"style.font": "Vorhandener Dateipfad für auf den Untertitelbereich angewendete Schriftart. Wenn nicht absolut, wird im Assets-Schriftartverzeichnis gesucht",
+		"style.text_color": "Textfarbe des Untertitelbereichs (hex)",
+		"style.background_color": "Hintergrundfarbe des Untertitelbereichs (hex)",
+		"style.emoji_style": "Emoji-Bildstil/Anbieter",
+		"style.width": "Skaliert das Bild, bis eine seiner Abmessungen zur angegebenen Größe passt. Verwendet den Lanczos-Resampler",
+
+		"optimization.audio_bitrate": "Audiobitrate der Ausgabedatei (kb/s)",
+		"optimization.delay_count": "Verzögerungszähler für die Ausgabedatei des dynamischen Bilds. Wenn keine vorhanden ist, wird die visuelle Eingabedatei geändert, wenn nicht statisch",
+		"optimization.loop_count": "Schleifenzähler für die Ausgabedatei des dynamischen Bilds. 0 für unendlich",
+		"optimization.lossy": "Optimierungsfaktor für die Ausgabedatei des dynamischen Bilds",
+
+		"switch.force_gif": "Bestimmt, ob die Ausgabedatei zwangsweise als GIF gespeichert werden soll",
+		"switch.webm_encode": "Video in WebM (VP9) codieren. Benötigt mehr Zeit!",
+		"switch.keep_session_directory": "Sitzungsverzeichnis nicht entfernen",
+		"switch.no_open_directory": "Ausgabedateispeicherort nach der Generierung nicht öffnen. Gilt nur, wenn Verbosität > -1",
+		"switch.no_optimization": "Die Ausgabedatei nicht optimieren",
+		"switch.force_primary_language": "Die englische Sprache in allen Zeichenfolgen erzwingen",
+
+		"main.help": "Zeigt diese Nachricht an"
+	},
+	"update_notification": {
+		"notification": "Sie verwenden nicht die neueste Version des Programms - bitte erwägen Sie ein Update"
+	},
+	"audio": {
+		"get_channels.run": "Ausführen des Befehls zur Audiokanalabfrage",
+		"get_channels.result": "Audiokanäle abgerufen: {channels}",
+
+		"convert.extension": "Konvertieren von Audio in das {target_extension}-Format",
+		"normalize.run": "Normalisieren von Audio auf {level} dBFS",
+		"no_silent.run": "Stilleerkennungsbefehl wird ausgeführt"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: Das Emoji \"{character}\" wird im \"{style_name}\"-Emoji-Stil nicht unterstützt. Bildverarbeitung abgebrochen",
+
+		"get_emoji_image.unsupported": "Der \"{style_name}\"-Stil wird nicht unterstützt",
+		"get_emoji_image.error_fetch": "Ein Problem beim Abrufen des Emoji-Bildes ist aufgetreten"
+	},
+	"video": {
+		"frame_rate.run": "Abrufen der Bildfrequenz aus der visuellen Eingabedatei",
+		"frame_rate.error": "Bildfrequenz kann nicht geparst werden, Verwendung des Programmstandards",
+
+		"frames.extract.run": "Befehl zum Extrahieren von Frames wird ausgeführt",
+		"create.palette.run": "Erzeugen einer Palettenbild-Datei",
+		"create.dynamic.run": "Dynamisches Bild wird erstellt",
+		"save.static_as_dynamic": "Statisches Bild als GIF speichern",
+		"create.dynamic.no_sound.is_dynamic": "Es wurde keine Audiodatei bereitgestellt und die visuelle Eingabe ist dynamisch. Erstellen eines GIFs",
+		"frames.combine.run": "Befehl zum Kombinieren von Frames und Audio wird ausgeführt (Video)"
+	},
+	"argparse/settings": {
+		"no_connection": "Keine Internetverbindung",
+		"emoji.no_connection": "Emoji-Abruf über API ist nicht möglich",
+
+		"url.ok": "URL wurde erfolgreich abgerufen",
+		"url.invalid": "URL ist ungültig",
+
+		"visual.parse_from_url": "Versuch, direkte Bild-URL aus der Seitenquelle zu parsen",
+
+		"visual.download.run": "Herunterladen der visuellen URL-Eingabe",
+		"visual.download.no_connection": "Die visuellen Medien können nicht von der Eingabe-URL/Quelle abgerufen werden",
+
+		"audio.download.run": "Herunterladen der Audioeingabe-URL",
+		"audio.download.no_connection": "Die Audio-Medien können nicht von der Eingabe-URL/Quelle abgerufen werden",
+
+		"audio.empty_no_sound": "Audioargument wurde nicht bereitgestellt und die visuelle Eingabe hat keinen Ton",
+
+		"visual.wrong_type": "Visueller Eingabepfad existiert, ist aber keine Datei!",
+		"visual.not_exists": "Visuelle Eingabedatei existiert nicht!",
+
+		"audio.wrong_type": "Audio-Eingabepfad existiert, ist aber keine Datei!",
+		"audio.not_exists": "Audio-Eingabedatei existiert nicht!",
+		"output_without_sound": "Ausgabedatei wird in einem Format gespeichert, das keinen Ton unterstützt",
+
+		"output_directory.wrong_type": "Eine Datei mit einem Pfad, der dem Ausgabeverzeichnis entspricht, existiert bereits!",
+
+		"font.wrong_type": "Ein Verzeichnis mit einem Pfad, der der Schriftdatei entspricht, existiert bereits!",
+		"font.not_exists": "Die Eingabeschriftdatei existiert nicht!",
+
+		"show.visual": "Visuelle Eingabedatei",
+		"show.audio": "Audioeingabedatei",
+		"show.font": "Schriftart-Eingabedatei",
+		"show.output_directory": "Ausgabeverzeichnis",
+		"show.session_directory": "Sitzungsverzeichnis"
+	},
+	"process": {
+		"frames.extract": "Frames extrahieren",
+		"caption.create": "Untertitel generieren",
+		"caption.apply": "Anwendung des Untertitels auf {frames_amount} Frames",
+		"frames.save_01": "Frame speichern",
+		"frames.combine": "Kombination von {frames_amount} Frames",
+		"wait": "Dies kann eine Weile dauern",
+		"output.optimize": "Optimierung der Ausgabedatei",
+		"output.create": "Erzeugen der Ausgabedatei",
+		"output.error": "Ausgabedatei existiert nicht!"
+	},
+	"ending": {
+		"output.saving": "Speichern der Ausgabedatei unter \"{output_file_path}\"",
+		"info.runtime": "Laufzeit",
+		"info.file.size": "Dateigröße der Ausgabedatei",
+		"info.file.type": "Dateityp der Ausgabedatei"
+	}
+}

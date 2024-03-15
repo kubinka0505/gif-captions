@@ -1,0 +1,135 @@
+{
+	"main": {
+		"pkg_not_found.exe": "{package_name} uitvoerbaar bestand werd niet gevonden binnen {variable_name} omgevingsvariabele",
+		"pkg_not_installed": "{package_name} pakket is niet geïnstalleerd",
+		"open_in_explorer": "Bestand openen in verkenner"
+	},
+	"pkg": {
+		"not_found": "{package_name} werd niet gevonden!"
+	},
+	"optim": {
+		"static.grayscale": "Statische afbeelding is geconverteerd naar grijswaarden kleurmodus",
+		"static.run": "Statische afbeeldingsoptimalisator wordt uitgevoerd met {max_colors} kleurlimiet",
+
+		"dynamic.delay_count": "Framerate is niet opgegeven, wordt gedetecteerd door het pakket",
+		"dynamic.delay_count.set": "Dynamische afbeeldingsvertraging wordt ingesteld op {delay_count}",
+		"dynamic.run": "Dynamische afbeeldingsoptimalisator wordt uitgevoerd met vertragingsaantal {delay_count} en lusbandaantal {loop_count}"
+	},
+	"argparse/main": {
+		"description": "Genereer bijschriften voor GIF",
+
+		"group.required": "Verplichte argumenten",
+		"group.optional": "Optionele argumenten",
+		"group.style": "Stijlargumenten",
+		"group.optimization": "Optimalisatieargumenten",
+		"group.switch": "Schakelargumenten",
+
+		"required.visual": "Absoluut pad / URL van bestaand statisch/dynamisch visueel bestand",
+		"required.text": "Bijschrifttekst",
+
+		"optional.audio": "Absoluut pad / URL van bestaand audiobestand. Probeert het geluid uit visuele invoer te halen indien niet opgegeven",
+		"optional.text_wrap": "Tekstomwikkelingslimiet",
+		"optional.output_directory": "Doelmap voor uitvoerbestand (bestemming)",
+		"optional.verbosity": "-1 voor niets, 0 voor alleen fouten, 1 voor alles",
+
+		"style.font": "Bestaand bestandspad voor lettertype toegepast op bijschriftveld. Als niet absoluut, wordt gezocht in de lettertypemap",
+		"style.text_color": "Tekstkleur bijschriftveld (hex)",
+		"style.background_color": "Achtergrondkleur bijschriftveld (hex)",
+		"style.emoji_style": "Emoji-afbeeldingsstijl/leverancier",
+		"style.width": "Schaalt afbeelding totdat een van de dimensies past bij de opgegeven grootte. Maakt gebruik van Lanczos-resampler",
+
+		"optimization.audio_bitrate": "Audiobitrate van uitvoerbestand (kb/s)",
+		"optimization.delay_count": "Vertragingsaantal van uitvoerbestand dynamische afbeelding. Indien geen, wijzigt het visuele invoerbestand indien niet statisch",
+		"optimization.loop_count": "Loopaantal van uitvoerbestand dynamische afbeelding. 0 voor oneindig",
+		"optimization.lossy": "Optimalisatiefactor van uitvoerbestand dynamische afbeelding",
+
+		"switch.force_gif": "Bepaalt of uitvoerbestand gedwongen moet worden opgeslagen als GIF",
+		"switch.webm_encode": "Codeer video naar WebM (VP9). Duurt langer!",
+		"switch.keep_session_directory": "Verwijder de sessiemap niet",
+		"switch.no_open_directory": "Open de locatie van het uitvoerbestand niet na generatie. Alleen van toepassing als verbosity > -1",
+		"switch.no_optimization": "Optimaliseer het uitvoerbestand niet",
+		"switch.force_primary_language": "Forceer de Engelse taal in alle teksten",
+
+		"main.help": "Toont dit bericht"
+	},
+	"update_notification": {
+		"notification": "Je gebruikt niet de nieuwste versie van het programma - overweeg een update"
+	},
+	"audio": {
+		"get_channels.run": "Uitvoeren commando voor het ophalen van audiokanalen",
+		"get_channels.result": "Audiokanalen opgehaald: {channels}",
+
+		"convert.extension": "Audio converteren naar {target_extension} formaat",
+		"normalize.run": "Normaliseer audio naar {level} dBFS",
+		"no_silent.run": "Stilte detectiecommando wordt uitgevoerd"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: De \"{character}\" emoji wordt niet ondersteund in \"{style_name}\" emoji-stijl. Beeldverwerking afgebroken",
+
+		"get_emoji_image.unsupported": "De \"{style_name}\" stijl wordt niet ondersteund",
+		"get_emoji_image.error_fetch": "Er is een probleem opgetreden bij het ophalen van de emoji-afbeelding"
+	},
+	"video": {
+		"frame_rate.run": "Framerate ophalen van visueel invoerbestand",
+		"frame_rate.error": "Kan framerate niet parsen, gebruikt standaard van het programma",
+
+		"frames.extract.run": "Uitvoeren commando voor het extraheren van frames",
+		"create.palette.run": "Paletbeeldbestand genereren",
+		"create.dynamic.run": "Dynamische afbeelding maken",
+		"save.static_as_dynamic": "Statisch beeld opslaan als GIF",
+		"create.dynamic.no_sound.is_dynamic": "Er is geen audiobestand opgegeven en visuele invoer is dynamisch, GIF wordt gemaakt",
+		"frames.combine.run": "Uitvoeren commando voor het combineren van frames en audio (video)"
+	},
+	"argparse/settings": {
+		"no_connection": "Geen internetverbinding",
+		"emoji.no_connection": "Emoji-ophalen van API zal niet mogelijk zijn",
+
+		"url.ok": "URL is succesvol opgehaald",
+		"url.invalid": "URL is ongeldig",
+
+		"visual.parse_from_url": "Poging om directe afbeeldings-URL te parseren uit paginabron",
+
+		"visual.download.run": "Invoer visuele URL downloaden",
+		"visual.download.no_connection": "Kan het visuele medium niet ophalen van de opgegeven URL/bron",
+
+		"audio.download.run": "Audio-invoer-URL downloaden",
+		"audio.download.no_connection": "Kan het audiobestand niet ophalen van de opgegeven URL/bron",
+
+		"audio.empty_no_sound": "Audioargument is niet opgegeven en visuele invoer heeft geen geluid",
+
+		"visual.wrong_type": "Visuele invoerpad bestaat, maar is geen bestand!",
+		"visual.not_exists": "Visueel invoerbestand bestaat niet!",
+
+		"audio.wrong_type": "Audio-invoerpad bestaat, maar is geen bestand!",
+		"audio.not_exists": "Audiobestand bestaat niet!",
+		"output_without_sound": "Uitvoerbestand wordt opgeslagen in een formaat dat geen geluid ondersteunt",
+
+		"output_directory.wrong_type": "Een bestand met een pad equivalent aan de uitvoermap bestaat al!",
+
+		"font.wrong_type": "Een map met een pad equivalent aan het lettertypebestand bestaat al!",
+		"font.not_exists": "Invoerlettertypebestand bestaat niet!",
+
+		"show.visual": "Visueel invoerbestand",
+		"show.audio": "Audio-invoerbestand",
+		"show.font": "Lettertype invoerbestand",
+		"show.output_directory": "Uitvoermap",
+		"show.session_directory": "Sessiemap"
+	},
+	"process": {
+		"frames.extract": "Frames extraheren",
+		"caption.create": "Bijschrift genereren",
+		"caption.apply": "Bijschrift toepassen op {frames_amount} frames",
+		"frames.save_01": "Frame opslaan",
+		"frames.combine": "Combineren van {frames_amount} frames",
+		"wait": "Dit kan even duren",
+		"output.optimize": "Uitvoerbestand optimaliseren",
+		"output.create": "Uitvoerbestand genereren",
+		"output.error": "Uitvoerbestand bestaat niet!"
+	},
+	"ending": {
+		"output.saving": "Uitvoerbestand wordt opgeslagen naar \"{output_file_path}\"",
+		"info.runtime": "Uitvoeringstijd",
+		"info.file.size": "Bestandsgrootte uitvoerbestand",
+		"info.file.type": "Bestandstype uitvoerbestand"
+	}
+}
