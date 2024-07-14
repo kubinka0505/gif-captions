@@ -1,0 +1,115 @@
+{
+	"main": {
+		"pkg_not_found.exe": "Nie znaleziono pliku wykonywalnego {package_name} w zmiennej środowiskowej {variable_name}",
+		"pkg_not_installed": "Pakiet {package_name} nie jest zainstalowany",
+		"open_in_explorer": "Otwieranie pliku w eksploratorze"
+	},
+	"pkg": {
+		"not_found": "Nie znaleziono {package_name}!"
+	},
+	"optim": {
+		"static.grayscale": "Statyczny obraz został przekształcony w tryb koloru szarego",
+		"static.run": "Uruchamianie optymalizatora statycznego obrazu z limitem kolorów {max_colors}",
+
+		"dynamic.delay_count": "Nie podano liczby klatek na sekundę, wykrywanie przez pakiet",
+		"dynamic.delay_count.set": "Licznik opóźnienia obrazu dynamicznego zostanie ustawiony na {delay_count}",
+		"dynamic.run": "Uruchamianie optymalizatora obrazu dynamicznego z liczbą klatek na sekundę {delay_count} i liczbą pętli {loop_count}"
+	},
+	"argparse/main": {
+		"description": "Generowanie podpisów GIF",
+		"group.required": "Wymagane argumenty",
+		"group.optional": "Opcjonalne argumenty",
+		"group.style": "Argumenty stylu",
+		"group.optimization": "Argumenty optymalizacji",
+		"group.switch": "Argumenty przełącznikowe",
+		"required.visual": "Bezwarunkowa ścieżka / adres URL istniejącego pliku wizualnego statycznego/dynamicznego",
+		"required.text": "Tekst podpisu",
+		"optional.audio": "Bezwarunkowa ścieżka / adres URL istniejącego pliku dźwiękowego. Próbuje pobrać dźwięk z wejścia wizualnego, jeśli nie jest podany",
+		"optional.text_wrap": "Limit znaków w wierszu tekstu",
+		"optional.output_directory": "Katalog docelowy pliku wyjściowego (miejsce przeznaczenia)",
+		"optional.verbosity": "-1 dla niczego, 0 tylko błędy, 1 dla wszystkiego",
+		"style.font": "Istniejąca ścieżka pliku dla czcionki zastosowanej do pola podpisu. Jeśli nie jest bezwzględna, szuka w katalogu czcionek aktywów",
+		"style.text_color": "Kolor tekstu pola podpisu (hex)",
+		"style.background_color": "Kolor tła pola podpisu (hex)",
+		"style.emoji_style": "Styl obrazka emoji/dostawcy",
+		"style.width": "Skaluje obraz, aż jedna z jego wymiarów będzie pasować do podanej wielkości. Używa interpolatora Lanczosa",
+		"optimization.audio_bitrate": "Bitrate audio pliku wyjściowego wideo (kb/s)",
+		"optimization.delay_count": "Liczba opóźnień pliku wyjściowego obrazu dynamicznego. Jeśli brak, modyfikuje plik wejściowy wizualny, jeśli nie jest statyczny",
+		"optimization.loop_count": "Liczba pętli pliku wyjściowego obrazu dynamicznego. 0 dla nieskończoności",
+		"optimization.lossy": "Współczynnik optymalizacji pliku wyjściowego obrazu dynamicznego",
+		"switch.force_gif": "Określa, czy plik wyjściowy powinien być zapisany siłą jako GIF",
+		"switch.webm_encode": "Koduj wideo do WebM (VP9). Zajmuje więcej czasu!",
+		"switch.keep_session_directory": "Nie usuwaj katalogu sesji",
+		"switch.no_open_directory": "Nie otwieraj lokalizacji pliku wyjściowego po jego wygenerowaniu. Dotyczy tylko gdy verbosity > -1",
+		"switch.no_optimization": "Nie optymalizuj pliku wyjściowego",
+		"switch.force_primary_language": "Wymusza język angielski we wszystkich ciągach",
+		"main.help": "Pokazuje tę wiadomość"
+	},
+	"update_notification": {
+		"notification": "Nie korzystasz z najnowszej wersji programu - rozważ aktualizację"
+	},
+	"audio": {
+		"get_channels.run": "Uruchamianie polecenia do pozyskiwania kanałów audio",
+		"get_channels.result": "Pobrano kanały audio: {channels}",
+		"convert.extension": "Konwertowanie dźwięku na format {target_extension}",
+		"normalize.run": "Normalizowanie dźwięku do poziomu {level} dBFS",
+		"no_silent.run": "Uruchamianie polecenia wykrywania ciszy"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: Emoji \"{character}\" nie jest obsługiwane w stylu emoji \"{style_name}\". Przetwarzanie obrazu przerwane",
+		"get_emoji_image.unsupported": "Styl \"{style_name}\" nie jest obsługiwany",
+		"get_emoji_image.error_fetch": "Wystąpił problem z pobieraniem obrazka emoji"
+	},
+	"video": {
+		"frame_rate.run": "Pobieranie liczby klatek na sekundę z pliku wejściowego wizualnego",
+		"frame_rate.error": "Nie można przeanalizować liczby klatek na sekundę, używając domyślnego programu",
+		"frames.extract.run": "Uruchamianie polecenia wyodrębniania klatek",
+		"create.palette.run": "Generowanie pliku obrazu palety",
+		"create.dynamic.run": "Tworzenie obrazu dynamicznego",
+		"save.static_as_dynamic": "Zapisywanie obrazu statycznego jako GIF",
+		"create.dynamic.no_sound.is_dynamic": "Nie podano pliku dźwiękowego, a wejście wizualne jest dynamiczne, tworzenie GIF-a",
+		"frames.combine.run": "Uruchamianie polecenia łączenia klatek i dźwięku (wideo)"
+	},
+	"argparse/settings": {
+		"no_connection": "Brak połączenia z internetem",
+		"emoji.no_connection": "Pobieranie emoji z API nie będzie możliwe",
+		"url.ok": "Adres URL został pomyślnie pobrany",
+		"url.invalid": "Adres URL jest nieprawidłowy",
+		"visual.parse_from_url": "Próba analizy bezpośredniego adresu URL obrazu z źródła strony",
+		"visual.download.run": "Pobieranie wizualnego adresu URL",
+		"visual.download.no_connection": "Nie można pobrać mediów wizualnych z podanego adresu URL/źródła",
+		"audio.download.run": "Pobieranie dźwiękowego adresu URL",
+		"audio.download.no_connection": "Nie można pobrać mediów audio z podanego adresu URL/źródła",
+		"audio.empty_no_sound": "Argument audio nie został podany, a wejście wizualne nie ma dźwięku",
+		"visual.wrong_type": "Ścieżka wejściowa wizualna istnieje, ale nie jest plikiem!",
+		"visual.not_exists": "Plik wejściowy wizualny nie istnieje!",
+		"audio.wrong_type": "Ścieżka wejściowa audio istnieje, ale nie jest plikiem!",
+		"audio.not_exists": "Plik wejściowy audio nie istnieje!",
+		"output_without_sound": "Plik wyjściowy zostanie zapisany w formacie nieobsługującym dźwięku",
+		"output_directory.wrong_type": "Plik o ścieżce równoważnej z katalogiem docelowym wyjścia już istnieje!",
+		"font.wrong_type": "Katalog o ścieżce równoważnej plikowi czcionki już istnieje!",
+		"font.not_exists": "Podany plik czcionki nie istnieje!",
+		"show.visual": "Plik wejściowy wizualny",
+		"show.audio": "Plik wejściowy audio",
+		"show.font": "Plik wejściowy czcionki",
+		"show.output_directory": "Katalog docelowy",
+		"show.session_directory": "Katalog sesji"
+	},
+	"process": {
+		"frames.extract": "Wyodrębnianie klatek",
+		"caption.create": "Generowanie podpisu",
+		"caption.apply": "Zastosowanie podpisu do {frames_amount} klatek",
+		"frames.save_01": "Zapisywanie klatki",
+		"frames.combine": "Łączenie {frames_amount} klatek",
+		"wait": "To może chwilę potrwać",
+		"output.optimize": "Optymalizowanie pliku wyjściowego",
+		"output.create": "Generowanie pliku wyjściowego",
+		"output.error": "Plik wyjściowy nie istnieje!"
+	},
+	"ending": {
+		"output.saving": "Zapisywanie pliku wyjściowego do \"{output_file_path}\"",
+		"info.runtime": "Czas wykonywania",
+		"info.file.size": "Rozmiar pliku wyjściowego",
+		"info.file.type": "Typ pliku wyjściowego"
+	}
+}

@@ -1,0 +1,135 @@
+{
+	"main": {
+		"pkg_not_found.exe": "Spustitelný soubor {package_name} nebyl nalezen ve proměnné prostředí {variable_name}",
+		"pkg_not_installed": "Balíček {package_name} není nainstalován",
+		"open_in_explorer": "Otevírání souboru v průzkumníku"
+	},
+	"pkg": {
+		"not_found": "{package_name} nebyl nalezen!"
+	},
+	"optim": {
+		"static.grayscale": "Statický obrázek byl převeden do režimu odstínů šedé",
+		"static.run": "Spouštění optimalizace statického obrázku s limitem {max_colors} barev",
+
+		"dynamic.delay_count": "Frekvence snímků nebyla poskytnuta, detekuje se pomocí balíčku",
+		"dynamic.delay_count.set": "Počet zpoždění dynamického obrázku bude nastaven na {delay_count}",
+		"dynamic.run": "Spouštění optimalizace dynamického obrázku s počtem zpoždění {delay_count} a počtem smyček {loop_count}"
+	},
+	"argparse/main": {
+		"description": "Generovat popisky GIF",
+
+		"group.required": "Povinné argumenty",
+		"group.optional": "Volitelné argumenty",
+		"group.style": "Argumenty stylu",
+		"group.optimization": "Optimalizační argumenty",
+		"group.switch": "Přepínací argumenty",
+
+		"required.visual": "Absolutní cesta / URL existujícího statického / dynamického vizuálního souboru",
+		"required.text": "Text popisku",
+
+		"optional.audio": "Absolutní cesta / URL existujícího zvukového souboru. Pokusí se získat zvuk z vizuálního vstupu, není-li poskytnut",
+		"optional.text_wrap": "Limit znaků zalamování textu",
+		"optional.output_directory": "Cílový adresář cílového souboru (cíl)",
+		"optional.verbosity": "-1 pro nic, 0 pouze chyby, 1 pro všechno",
+
+		"style.font": "Existující cesta k souboru s písmem používaným na pole popisku. Pokud není absolutní, vyhledává se ve složce písma zásob",
+		"style.text_color": "Barva textu v poli popisku (hex)",
+		"style.background_color": "Barva pozadí pole popisku (hex)",
+		"style.emoji_style": "Styl / dodavatel obrázku emoji",
+		"style.width": "Změří obrázek, dokud se jedna z jeho dimenzí nevejde do zadané velikosti. Používá se interpolátor Lanczos",
+
+		"optimization.audio_bitrate": "Bitová rychlost zvukového výstupního souboru (kb/s)",
+		"optimization.delay_count": "Počet zpoždění dynamického výstupního souboru. Pokud žádné není, upravuje se vizuální vstupní soubor, není-li statický",
+		"optimization.loop_count": "Počet smyček dynamického výstupního souboru. 0 pro nekonečno",
+		"optimization.lossy": "Faktor optimalizace dynamického výstupního souboru",
+
+		"switch.force_gif": "Určuje, zda má být výstupní soubor násilně uložen jako GIF",
+		"switch.webm_encode": "Kódovat video do formátu WebM (VP9). Vyžaduje více času!",
+		"switch.keep_session_directory": "Nepřemazávat adresář relace",
+		"switch.no_open_directory": "Nepoužívejte otevření umístění výstupního souboru po jeho vygenerování. Použitelné pouze pokud je verbose> -1",
+		"switch.no_optimization": "Neoptimalizujte výstupní soubor",
+		"switch.force_primary_language": "Vynutit anglický jazyk ve všech řetězcích",
+
+		"main.help": "Zobrazit tuto zprávu"
+	},
+	"update_notification": {
+		"notification": "Používáte nejnovější verzi programu - zvažte prosím aktualizaci"
+	},
+	"audio": {
+		"get_channels.run": "Spouštění příkazu pro získání zvukových kanálů",
+		"get_channels.result": "Získány zvukové kanály: {channels}",
+
+		"convert.extension": "Převádí zvuk do formátu {target_extension}",
+		"normalize.run": "Normalizace zvuku na {level} dBFS",
+		"no_silent.run": "Spouštění příkazu pro detekci ticha"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: Emoji \"{character}\" není podporováno ve stylu \"{style_name}\". Zpracování obrázku bylo přerušeno",
+
+		"get_emoji_image.unsupported": "Styl \"{style_name}\" není podporován",
+		"get_emoji_image.error_fetch": "Došlo k problému při získávání obrázku emoji"
+	},
+	"video": {
+		"frame_rate.run": "Získávání snímkovací frekvence ze vstupního vizuálního souboru",
+		"frame_rate.error": "Nelze analyzovat snímkovací frekvenci, používá se výchozí hodnota programu",
+
+		"frames.extract.run": "Spouštění příkazu pro extrakci snímků",
+		"create.palette.run": "Generování souboru s paletou",
+		"create.dynamic.run": "Vytváření dynamického obrázku",
+		"save.static_as_dynamic": "Ukládání statického obrázku jako GIF",
+		"create.dynamic.no_sound.is_dynamic": "Nebyl poskytnut žádný zvukový soubor a vizuální vstup je dynamický, vytváření GIF",
+		"frames.combine.run": "Spouštění příkazu pro kombinaci snímků a zvuku (video)"
+	},
+	"argparse/settings": {
+		"no_connection": "Žádné připojení k internetu",
+		"emoji.no_connection": "Získání emoji z API nebude možné",
+
+		"url.ok": "URL bylo úspěšně získáno",
+		"url.invalid": "URL je neplatná",
+
+		"visual.parse_from_url": "Pokus o analýzu přímé URL adresy obrázku ze zdrojového kódu stránky",
+
+		"visual.download.run": "Stahování vizuální URL",
+		"visual.download.no_connection": "Nelze stáhnout vizuální média z vstupní URL / zdroje",
+
+		"audio.download.run": "Stahování zvukové URL",
+		"audio.download.no_connection": "Nelze stáhnout zvuková média z vstupní URL / zdroje",
+
+		"audio.empty_no_sound": "Není uveden zvukový argument a vizuální vstup nemá zvuk",
+
+		"visual.wrong_type": "Vizualizační vstupní cesta existuje, ale není to soubor!",
+		"visual.not_exists": "Vizualizační vstupní soubor neexistuje!",
+
+		"audio.wrong_type": "Zvukový vstupní soubor existuje, ale není to soubor!",
+		"audio.not_exists": "Zvukový vstupní soubor neexistuje!",
+		"output_without_sound": "Výstupní soubor bude uložen do formátu, který nepodporuje zvuk",
+
+		"output_directory.wrong_type": "Soubor s cestou ekvivalentní k výstupnímu adresáři již existuje!",
+
+		"font.wrong_type": "Adresář s cestou ekvivalentní k souboru písma již existuje!",
+		"font.not_exists": "Vstupní soubor písma neexistuje!",
+
+		"show.visual": "Vstupní vizuální soubor",
+		"show.audio": "Vstupní zvukový soubor",
+		"show.font": "Vstupní soubor písma",
+		"show.output_directory": "Výstupní adresář",
+		"show.session_directory": "Adresář relace"
+	},
+	"process": {
+		"frames.extract": "Extrakce snímků",
+		"caption.create": "Generování popisku",
+		"caption.apply": "Aplikace popisku na {frames_amount} snímků",
+		"frames.save_01": "Ukládání snímku",
+		"frames.combine": "Kombinování {frames_amount} snímků",
+		"wait": "Může to chvíli trvat",
+		"output.optimize": "Optimalizace výstupního souboru",
+		"output.create": "Generování výstupního souboru",
+		"output.error": "Výstupní soubor neexistuje!"
+	},
+	"ending": {
+		"output.saving": "Ukládání výstupního souboru do \"{output_file_path}\"",
+		"info.runtime": "Doba běhu",
+		"info.file.size": "Velikost výstupního souboru",
+		"info.file.type": "Typ výstupního souboru"
+	}
+}

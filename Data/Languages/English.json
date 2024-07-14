@@ -1,0 +1,135 @@
+{
+	"main": {
+		"pkg_not_found.exe": "{package_name} executable was not found inside {variable_name} environment variable",
+		"pkg_not_installed": "{package_name} package is not installed",
+		"open_in_explorer": "Opening file in explorer"
+	},
+	"pkg": {
+		"not_found": "{package_name} was not found!"
+	},
+	"optim": {
+		"static.grayscale": "Static image was converted to grayscale color mode",
+		"static.run": "Running static image optimizer with {max_colors} color limit",
+
+		"dynamic.delay_count": "Frame rate was not provided, detecting by package",
+		"dynamic.delay_count.set": "Dynamic image delay count will be set to {delay_count}",
+		"dynamic.run": "Running dynamic image optimizer with delay count {delay_count} and loop count {loop_count}"
+	},
+	"argparse/main": {
+		"description": "Generate GIF captions",
+
+		"group.required": "Required arguments",
+		"group.optional": "Optional arguments",
+		"group.style": "Styling arguments",
+		"group.optimization": "Optimization arguments",
+		"group.switch": "Switch arguments",
+
+		"required.visual": "Existing static/dynamic visual file's absoulte path / URL",
+		"required.text": "Caption text",
+
+		"optional.audio": "Existing audio file's absoulte path / URL. Attempts to retrieve the sound from visual input if not provided",
+		"optional.text_wrap": "Text wrap character limit",
+		"optional.output_directory": "Output file target directory (destination)",
+		"optional.verbosity": "-1 for nothing, 0 for errors only, 1 for everything",
+
+		"style.font": "Existing file path for font applied to caption field. If not absolute, searches in assets font directory",
+		"style.text_color": "Caption field text color (hex)",
+		"style.background_color": "Caption field background color (hex)",
+		"style.emoji_style": "Emoji image style/vendor",
+		"style.width": "Scales image until one of its dimensions fits the given size. Uses Lanczos resampler",
+
+		"optimization.audio_bitrate": "Video output file's provided audio bitrate (kb/s)",
+		"optimization.delay_count": "Dynamic image output file frames delay count (ms/frame). If < 1, retrieves from visual input file if it's not static",
+		"optimization.loop_count": "Dynamic image output file loop count. 0 for infinity",
+		"optimization.lossy": "Dynamic image output file optimization factor",
+
+		"switch.force_gif": "Determines whether output file should be forcefully saved as GIF",
+		"switch.webm_encode": "Encode video to WebM (VP9). Takes more time!",
+		"switch.keep_session_directory": "Do not remove the session directory",
+		"switch.no_open_directory": "Do not open output file location after its generation. Applicable only if verbosity > -1",
+		"switch.no_optimization": "Do not optimize the output file",
+		"switch.force_primary_language": "Force the english language in all strings",
+
+		"main.help": "Shows this message"
+	},
+	"update_notification": {
+		"notification": "You are using not using the latest version of the program - please consider update"
+	},
+	"audio": {
+		"get_channels.run": "Running audio channels retrieval command",
+		"get_channels.result": "Audio channels retrieved: {channels}",
+
+		"convert.extension": "Converting audio to {target_extension} format",
+		"normalize.run": "Normalizing audio to {level} dBFS",
+		"no_silent.run": "Running silence detection command"
+	},
+	"image": {
+		"caption.create.unsupported_emoji": "{error_name}: The \"{character}\" emoji is not supported on \"{style_name}\" emoji style. Image processing aborted",
+
+		"get_emoji_image.unsupported": "The \"{style_name}\" style is unsupported",
+		"get_emoji_image.error_fetch": "A problem with fetching the emoji image occured"
+	},
+	"video": {
+		"frame_rate.run": "Retrieving frame rate from visual input file",
+		"frame_rate.error": "Unable to parse frame rate, using program's default",
+
+		"frames.extract.run": "Running frames extraction command",
+		"create.palette.run": "Generating palette image file",
+		"create.dynamic.run": "Creating dynamic image",
+		"save.static_as_dynamic": "Saving static image as GIF",
+		"create.dynamic.no_sound.is_dynamic": "No audio file has been provided and visual input is dynamic, creating GIF",
+		"frames.combine.run": "Running frames and audio combination command (video)"
+	},
+	"argparse/settings": {
+		"no_connection": "No internet connection",
+		"emoji.no_connection": "Emoji retrieval from API will not be possible",
+
+		"url.ok": "URL has been retrieved successfully",
+		"url.invalid": "URL is invalid",
+
+		"visual.parse_from_url": "Attempting to parse direct image URL from page source",
+
+		"visual.download.run": "Downloading input visual URL",
+		"visual.download.no_connection": "Cannot fetch the visual media from the input URL/source",
+
+		"audio.download.run": "Downloading audio input URL",
+		"audio.download.no_connection": "Cannot fetch the audio media from the input URL/source",
+
+		"audio.empty_no_sound": "Audio argument was not provided and visual input has no sound",
+
+		"visual.wrong_type": "Visual input path exists, but is not a file!",
+		"visual.not_exists": "Visual input file does not exist!",
+
+		"audio.wrong_type": "Audio input path exists, but is not a file!",
+		"audio.not_exists": "Audio input file does not exist!",
+		"output_without_sound": "Output file will be saved to format not supporting sound",
+
+		"output_directory.wrong_type": "A file with path equivalent to output directory already exists!",
+
+		"font.wrong_type": "A directory with path equivalent to font file already exists!",
+		"font.not_exists": "Input font file does not exist!",
+
+		"show.visual": "Visual input file",
+		"show.audio": "Audio input file",
+		"show.font": "Font input file",
+		"show.output_directory": "Output directory",
+		"show.session_directory": "Session directory"
+	},
+	"process": {
+		"frames.extract": "Extracting frames",
+		"caption.create": "Generating caption",
+		"caption.apply": "Applying caption to {frames_amount} frames",
+		"frames.save_01": "Saving frame",
+		"frames.combine": "Combining {frames_amount} frames",
+		"wait": "This can take a while",
+		"output.optimize": "Optimizing output file",
+		"output.create": "Generating output file",
+		"output.error": "Output file does not exist!"
+	},
+	"ending": {
+		"output.saving": "Saving output file to \"{output_file_path}\"",
+		"info.runtime": "Runtime",
+		"info.file.size": "Output file size",
+		"info.file.type": "Output file type"
+	}
+}
